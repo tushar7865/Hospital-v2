@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", system-ui;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+/* Navigation styling */
+header {
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #008cba;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    gap: 15px;
+}
+
+.Appointment-btn {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Appointment-btn:hover {
+    background-color: #0096c7;
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    min-height: 80vh;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    height: auto;
+}
+
+/* About-us section */
+.About-us-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.About-us-left, .About-us-right {
+    flex: 1;
+}
+
+.timetable-card {
+    width: 300px;
+    padding: 20px;
+    background: rgba(97, 24, 97, 0.8);
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: url('/images/images-23.jfif') no-repeat center center;
+    background-size: cover;
+}
+
+.timetable-card h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.time-slots {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: rgba(179, 51, 179, 0.8);
+    border: 1px solid white;
+}
+
+.time-slots li {
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+}
+
+/* Services section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 30px;
+    background-color: white;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon img {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact, .Appointment, .get-appointment {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Appointment:hover, .get-appointment:hover {
+    background-color: #00b4d8;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.medical-services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
+}
+
+.service-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    max-width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.service-box h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Appointment button */
+.Appointment-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.Appointment-btn {
+    background: linear-gradient(to right, #48c6ef, #6f86d6);
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Appointment-btn:hover {
+    box-shadow: 0 10px 20px rgba(72, 198, 239, 0.3);
+}
+
+/* Form styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background: #1d1b1b;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+    
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .services {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .Appointment-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .service-box {
+        max-width: 120px;
+    }
+
+    .Appointment-section {
+        flex-direction: column;
+    }
+
+    
+}
+
